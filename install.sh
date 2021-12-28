@@ -7,10 +7,10 @@ read -r PROG_DIR < <(
 BIN_DIR="/usr/local/bin"
 
 cd "${BIN_DIR}" || exit 1
-sudo rm -f "${BIN_DIR}/glabels" "${BIN_DIR}/glabels-batch"
+sudo rm -f "${BIN_DIR}/glabels-2" "${BIN_DIR}/glabels-batch-2"
 
-sudo ln -s "${PROG_DIR}/glabels" .
-sudo ln -s "${PROG_DIR}/glabels-batch" .
+sudo ln -s "${PROG_DIR}/glabels" ./glabels-2
+sudo ln -s "${PROG_DIR}/glabels-batch" ./glabels-batch-2
 
 cd "${PROG_DIR}" || exit 1
 
